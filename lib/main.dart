@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:new_project/utils/app_router.dart';
 import 'package:new_project/views/home_view.dart';
 
 void main() {
@@ -17,11 +18,12 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_, child) {
-        return const MaterialApp(
-          debugShowCheckedModeBanner: false,
-          home: HomeView(),
-          
-        );
+        AppRouter appRouter = AppRouter();
+        return MaterialApp(
+            theme: ThemeData(fontFamily: "SpaceGrotesk"),
+            debugShowCheckedModeBanner: false,
+            home: const HomeView(),
+            onGenerateRoute: appRouter.onGenerateRoute);
       },
     );
   }

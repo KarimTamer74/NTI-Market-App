@@ -13,15 +13,18 @@ class HomeViewTopTittle extends StatelessWidget {
       text: TextSpan(children: [
         TextSpan(
           text: 'Selling the ',
-          style: Styles.textStyle24.copyWith(color: AppColors.kBlackColor),
+          style: Styles.textStyle24.copyWith(
+              color: AppColors.kBlackColor, fontFamily: "SpaceGrotesk"),
         ),
         TextSpan(
           text: 'MOST POPULAR ',
-          style: Styles.textStyle24.copyWith(color: AppColors.kGreenColor),
+          style: Styles.textStyle24.copyWith(
+              color: const Color(0xffA3D80D), fontFamily: "SpaceGrotesk"),
         ),
         TextSpan(
           text: 'NFT is only here',
-          style: Styles.textStyle24.copyWith(color: AppColors.kBlackColor),
+          style: Styles.textStyle24.copyWith(
+              color: AppColors.kBlackColor, fontFamily: "SpaceGrotesk"),
         ),
       ]),
     );

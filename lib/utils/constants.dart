@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppConstants {
   static const onboardingView = '/';
   static const homeView = '/home';
+  static const detailsView = '/detailsView';
   static const signInView = '/signin';
   static const signUpView = '/signup';
   static const signOut = '/signout';
